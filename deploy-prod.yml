@@ -31,8 +31,10 @@ trigger:
 resources:
   repositories:
     - repository: templates
-      type: git
+      type: github
       name: templates
+      endpoint: kathikelRG
+      name: kathikelRG/templates
 
 variables:
 - template: vars.yml@templates
