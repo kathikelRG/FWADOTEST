@@ -1,7 +1,9 @@
-pool:
-  vmImage: 'ubuntu-latest'
+resources:
+  repositories:
+    - repository: templates
+      type: github
+      endpoint: kathikelRG
+      name: kathikelRG/templates
 
-container: ubuntu:18.04
-
-steps:
-- script: printenv
+stages:
+- template: testing.yml@templates
