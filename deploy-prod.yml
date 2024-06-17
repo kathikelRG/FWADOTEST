@@ -38,7 +38,10 @@ resources:
 
 variables:
 - template: vars.yml@templates
-
+pool: 
+ vmImage: 'ubuntu-latest'
+ container: 'redgate/flyway'
+ 
 stages:
 
 # - template: rg-clone-sql-server.yml@templates                        # templates/deploy.yml if kept in same repository
