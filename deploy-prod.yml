@@ -34,10 +34,7 @@ resources:
       type: github
       endpoint: kathikelRG
       name: kathikelRG/templates
-  containers:
-  - container: flyway
-    image: redgate/flyway
-    
+
 
 variables:
 - template: vars.yml@templates
