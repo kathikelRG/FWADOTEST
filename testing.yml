@@ -6,4 +6,4 @@ resources:
       name: kathikelRG/templates
 
 stages:
-- template: testing.yml@templates
+- template: test.yml@templates
