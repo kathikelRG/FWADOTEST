@@ -39,7 +39,7 @@ resources:
 variables:
 - template: vars.yml@templates
 pool: 
- vmImage: 'ubuntu-latest'
+ vmImage: 'windows-latest'
  container: 'redgate/flyway'
  
 stages:
